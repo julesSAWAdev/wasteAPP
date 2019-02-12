@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:isScrollContainer="true"
+    android:fitsSystemWindows="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/wastebg"
+    tools:context=".Credit">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:isScrollContainer="true"
+            android:orientation="vertical">
+
+            <!-- =========== Title =============== -->
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/credTitle"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="20dp"
+                android:textStyle="bold"
+                android:textSize="22sp"
+                android:textColor="@color/darkSlateGray"
+                />
+
+            <TextView
+                android:id="@+id/comm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/credDetails"
+                android:textColor="@color/darkSlateGray"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/defCredit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="3dp"
+                android:clickable="true"
+                android:textStyle="bold"
+                android:focusable="true"
+                android:text="@string/defCredit"
+                android:textColor="@color/yellowgreen"
+                android:textSize="16sp" />
+
+
+            <!-- =========== Step 1 =============== -->
+            <TextView
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="20dp"
+                android:layout_width="wrap_content"
+                android:textColor="@color/darkSlateGray"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:text="@string/oneTitle"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/oneDescr"
+                android:textColor="@color/darkSlateGray"
+                android:textSize="13sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/air"
+                        android:textColor="@color/darkSlateGray"
+                        android:textSize="13sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:textStyle="bold"
+                        android:text="@string/airNo"
+                        android:textColor="@color/darkSlateGray"
+                        android:textSize="13sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/mobiCash"
+                        android:textColor="@color/darkSlateGray"
+                        android:textSize="13sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/mobiNo"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:textColor="@color/darkSlateGray"
+                        android:textSize="13sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- =========== Step 2 =============== -->
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_width="wrap_content"
+                android:textColor="@color/darkSlateGray"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:text="@string/twoTitle"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/twoDescr"
+                android:textColor="@color/darkSlateGray"
+                android:textSize="13sp" />
+
+            <!-- =========== Transaction ID =============== -->
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inputTrans"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp">
+
+                <EditText
+                    android:id="@+id/transID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/transId"
+                    android:inputType="textShortMessage" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <!-- =========== Deposit Amount =============== -->
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inputCash"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp">
+
+                <EditText
+                    android:id="@+id/transCash"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/transCash"
+                    android:inputType="number" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <!-- =========== Envoyer =============== -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cvSend"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="20dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="8dp"
+                    app:cardBackgroundColor="@color/yellowgreen">
+
+                    <TextView
+                        android:textAlignment="inherit"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/whitesmoke"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        android:textAllCaps="true"
+                        android:layout_height="wrap_content"
+                        android:text="@string/send"
+                        />
+
+                </android.support.v7.widget.CardView>
+
+            </RelativeLayout>
+
+            <!-- ================ Step 3 ============== -->
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_width="wrap_content"
+                android:textColor="@color/darkSlateGray"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:text="@string/threeTitle"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/threeDescr"
+                android:textColor="@color/darkSlateGray"
+                android:textSize="13sp" />
+
+            <!-- ================ Step 4 ============== -->
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_width="wrap_content"
+                android:textColor="@color/darkSlateGray"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:text="@string/fourTitle"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/fourDescr"
+                android:textColor="@color/darkSlateGray"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+    </ScrollView>

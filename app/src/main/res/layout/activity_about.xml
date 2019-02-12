@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkSlateGray"
+    tools:context=".About">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:text="@string/appName"
+            android:textColor="@color/whitesmoke"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textStyle="bold|italic"
+            android:text="@string/version"
+            android:textColor="@color/dimGray"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_marginTop="50dp"
+            android:contentDescription="@string/descr"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_gravity="center"
+            android:src="@drawable/waste_brand" />
+
+        <TextView
+            android:id="@+id/tv_share_app"
+            android:layout_marginTop="20dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:clickable="true"
+            android:drawableEnd="@drawable/ic_share_small_black_24dp"
+            android:focusable="true"
+            android:textColor="@color/yellowgreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/shareapp"/>
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="@string/copy"
+        android:textStyle="bold"
+        android:textColor="@color/dimGray"
+        android:textSize="15sp" />
+
+        <TextView
+        android:id="@+id/web"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:textColorLink="@color/limegreen"
+        android:layout_marginTop="20dp"
+        android:text="@string/link"
+        android:clickable="true"
+        android:focusable="true"
+        android:textColor="@color/yellowgreen"
+        android:textSize="14sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

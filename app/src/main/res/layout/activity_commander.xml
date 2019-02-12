@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    android:isScrollContainer="true"
+    android:background="@drawable/wastebg"
+    tools:context=".Commander">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:fitsSystemWindows="true"
+        android:isScrollContainer="true"
+        android:background="@drawable/wastebg">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/commander"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:textColor="@color/darkSlateGray"
+            />
+
+            <TextView
+                android:id="@+id/comm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/com"
+                android:textColor="@color/darkSlateGray"
+                android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/link_credit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:textStyle="bold"
+            android:text="@string/credit_link"
+            android:textColor="@color/yellowgreen"
+            android:textSize="16sp" />
+
+        <!-- Category -->
+
+        <TextView
+            android:id="@+id/tvCom1"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_width="wrap_content"
+            android:textColor="@color/darkSlateGray"
+            android:textSize="18sp"
+            android:layout_height="wrap_content"
+            android:text="@string/category"
+            />
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cvCom1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            app:cardCornerRadius="8dp"
+            app:cardBackgroundColor="@color/whitesmoke">
+
+            <Spinner
+                android:id="@+id/client"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+        </android.support.v7.widget.CardView>
+
+        <!-- Frequence -->
+
+        <TextView
+            android:id="@+id/tvCom2"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_width="wrap_content"
+            android:textColor="@color/darkSlateGray"
+            android:textSize="18sp"
+            android:layout_height="wrap_content"
+            android:text="@string/frequency"
+            />
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cvCom2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            app:cardCornerRadius="8dp"
+            app:cardBackgroundColor="@color/whitesmoke">
+
+            <Spinner
+                android:id="@+id/frequency"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+        </android.support.v7.widget.CardView>
+
+        <!-- Creneau -->
+        <TextView
+            android:id="@+id/tvCom3"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_width="wrap_content"
+            android:textColor="@color/darkSlateGray"
+            android:textSize="18sp"
+            android:layout_height="wrap_content"
+            android:text="@string/creneau"
+            />
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cvCom3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            app:cardCornerRadius="8dp"
+            app:cardBackgroundColor="@color/whitesmoke">
+
+            <Spinner
+                android:id="@+id/creneau"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+        </android.support.v7.widget.CardView>
+
+        <!-- Jour de ramassage -->
+        <TextView
+            android:id="@+id/tvCom7"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_width="wrap_content"
+            android:textColor="@color/darkSlateGray"
+            android:textSize="18sp"
+            android:layout_height="wrap_content"
+            android:text="@string/jourR"
+            />
+
+        <!-- Days of collects chooser -->
+        <android.support.v7.widget.CardView
+            android:id="@+id/cvDays"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            app:cardCornerRadius="8dp"
+            app:cardBackgroundColor="@color/whitesmoke">
+
+            <TextView
+                android:id="@+id/tvDays2"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="10dp"
+                android:layout_width="wrap_content"
+                android:textColor="@color/darkSlateGray"
+                android:textSize="16sp"
+                android:layout_height="wrap_content"
+                android:text="@string/jour"
+                />
+
+        </android.support.v7.widget.CardView>
+
+        <!-- Amount -->
+        <TextView
+            android:id="@+id/tv_amount"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="0dp"
+            android:visibility="invisible"
+            android:layout_marginStart="20dp"
+            />
+
+        <!-- Number of Collects -->
+        <TextView
+            android:id="@+id/tv_collects"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="0dp"
+            android:visibility="invisible"
+            android:layout_marginStart="20dp"
+            />
+
+        <!-- Days of collects  -->
+        <TextView
+            android:id="@+id/tv_days"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="0dp"
+            android:visibility="invisible"
+            android:layout_marginStart="20dp"
+            />
+
+        <!-- Residence -->
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/inputResidence"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp">
+
+            <EditText
+                android:hint="@string/residence"
+                android:id="@+id/et_residence2"
+                android:inputType="textPersonName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <requestFocus />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <!-- Place -->
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/inputPlace"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp">
+
+            <EditText
+                android:hint="@string/place"
+                android:id="@+id/et_place2"
+                android:inputType="textPersonName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <requestFocus />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <!-- Phone -->
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/inputPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp">
+
+            <EditText
+                android:hint="@string/phone"
+                android:id="@+id/et_phone2"
+                android:maxLength="8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone" />
+            <requestFocus />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <!-- Residence
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvCom47"
+                android:layout_width="wrap_content"
+                android:textColor="@color/darkSlateGray"
+                android:textSize="18sp"
+                android:layout_height="wrap_content"
+                android:text="@string/residence1"
+                />
+
+            <TextView
+                android:id="@+id/tv_residence"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                />
+
+        </LinearLayout>-->
+
+        <!-- Place
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvCom57"
+                android:layout_width="wrap_content"
+                android:textColor="@color/darkSlateGray"
+                android:textSize="18sp"
+                android:layout_height="wrap_content"
+                android:text="@string/place1"
+                />
+
+            <TextView
+                android:id="@+id/tv_place"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                />
+
+        </LinearLayout>-->
+
+        <!-- Phone
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvCom67"
+                android:layout_width="wrap_content"
+                android:textColor="@color/darkSlateGray"
+                android:textSize="18sp"
+                android:layout_height="wrap_content"
+                android:text="@string/phone1"
+                />
+
+            <TextView
+                android:id="@+id/tv_phone"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                />
+
+        </LinearLayout>-->
+
+
+        <!-- Change Address
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:textSize="18sp"
+            android:textColor="@color/yellowgreen"
+            android:text="@string/address"
+            android:layout_marginStart="20dp"
+            />-->
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content">
+
+            <!-- Confirmer -->
+            <android.support.v7.widget.CardView
+                android:id="@+id/cvConfirm"
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="20dp"
+                app:cardCornerRadius="8dp"
+                app:cardBackgroundColor="@color/yellowgreen">
+
+                <TextView
+                    android:id="@+id/tvCom6"
+                    android:textAlignment="inherit"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/whitesmoke"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"
+                    android:layout_height="wrap_content"
+                    android:text="@string/confirm"
+                    />
+
+            </android.support.v7.widget.CardView>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

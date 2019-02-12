@@ -1,0 +1,18 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/darkSlateGray</item>
+        <item name="colorPrimaryDark">@color/darkSlateGray</item>
+        <item name="colorAccent">@color/yellowgreen</item>
+    </style>
+
+    <!-- Main application theme. -->
+    <style name="MainPageTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/darkSlateGray</item>
+        <item name="colorPrimaryDark">@color/darkSlateGray</item>
+        <item name="colorAccent">@color/yellowgreen</item>
+    </style>
+</resources>

@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:background="@drawable/wastebg"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainPage">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+
+        <ImageView
+            android:contentDescription="@string/descr"
+            android:layout_marginStart="10dp"
+            android:layout_centerVertical="true"
+            android:layout_width="60dp"
+            android:layout_height="100dp"
+            android:src="@drawable/waste_brand"/>
+
+        <LinearLayout
+            android:id="@+id/ll2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="90dp">
+
+            <TextView
+                android:id="@+id/tv_names"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/whitesmoke"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:text="@string/left"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/whitesmoke"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_id"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/whitesmoke"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+
+                <TextView
+                    android:text="@string/right"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/whitesmoke"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_below="@id/ll2"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_share"
+                android:layout_marginStart="90dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:clickable="true"
+                android:layout_gravity="center_vertical"
+                android:drawableEnd="@drawable/ic_share_small_black_24dp"
+                android:focusable="true"
+                android:textColor="@color/yellowgreen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/share_credit"/>
+
+            <!-- ============ Credit counter ========== -->
+            <android.support.v7.widget.CardView
+                android:id="@+id/cvShareHist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardBackgroundColor="@color/yellowgreen"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp">
+
+                <TextView
+                    android:id="@+id/tv_credit_share"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="@string/counter"
+                    android:textColor="@color/whitesmoke"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </android.support.v7.widget.CardView>
+
+            <!--<TextView
+                android:id="@+id/tv_share_credit"
+                android:layout_marginStart="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:clickable="true"
+                android:layout_gravity="center_vertical"
+                android:focusable="true"
+                android:textColor="@color/yellowgreen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/counter"/>-->
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:alignmentMode="alignMargins"
+        android:columnCount="2"
+        android:layout_marginTop="30dp"
+        android:columnOrderPreserved="true"
+        android:rowCount="2">
+
+        <!-- Row 1 -->
+        <!-- Column 1 -->
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/crediter_card"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_rowWeight="1"
+            android:clickable="true"
+            android:focusable="true"
+            app:cardBackgroundColor="#fcfcfc"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="12dp">
+
+            <!-- ============ Credit counter ========== -->
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@color/red"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="12dp">
+
+                <TextView
+                    android:id="@+id/tv_credit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="@string/counter"
+                    android:textColor="@color/whitesmoke"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </android.support.v7.widget.CardView>
+
+
+            <LinearLayout
+                android:id="@+id/ll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_margin="16dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/descr"
+                    android:src="@drawable/billtwo" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/crediter"
+                    android:textAlignment="center"
+                    android:textColor="@color/yellowgreen"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <!-- Row 1 -->
+        <!-- Column 2 -->
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_commander"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_rowWeight="1"
+            android:clickable="true"
+            android:focusable="true"
+            app:cardBackgroundColor="#fcfcfc"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="12dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_margin="16dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/descr"
+                    android:src="@drawable/binthree" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/commander"
+                    android:textAlignment="center"
+                    android:textColor="@color/yellowgreen"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <!-- Row 2 -->
+        <!-- Column 1 -->
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_historique"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_rowWeight="1"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="12dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_margin="16dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/descr"
+                    android:src="@drawable/listfour" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/historique"
+                    android:textAlignment="center"
+                    android:textColor="@color/yellowgreen"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <!-- Row 2 -->
+        <!-- Column 2 -->
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv_about"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_rowWeight="1"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="12dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_margin="16dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/descr"
+                    android:src="@drawable/aboutone" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/aboutus"
+                    android:textAlignment="center"
+                    android:textColor="@color/yellowgreen"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </GridLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvRefresh"
+                android:layout_marginStart="10dp"
+                android:text="@string/refresh"
+                android:textSize="16sp"
+                android:textColor="@color/yellowgreen"
+                android:drawableEnd="@drawable/ic_refresh_black_24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentStart="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/solde"
+                        android:textColor="@color/whitesmoke"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_solde"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:layout_marginStart="4dp"
+                        android:text="@string/counter"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cvLogout"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:focusable="true"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="8dp">
+
+            <ImageView
+                android:contentDescription="@string/descr"
+                android:layout_width="50dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginBottom="3dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:src="@drawable/logoutone"/>
+
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+
+</LinearLayout>

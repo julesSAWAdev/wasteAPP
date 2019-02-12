@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_height="match_parent">
+
+    <!-- Residence -->
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/inputResidence"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp">
+
+        <EditText
+            android:hint="@string/residence"
+            android:id="@+id/et_residence"
+            android:inputType="textPersonName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <requestFocus />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <!-- Place -->
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/inputPlace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp">
+
+        <EditText
+            android:hint="@string/place"
+            android:id="@+id/et_place"
+            android:inputType="textPersonName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <requestFocus />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <!-- Phone -->
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/inputPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp">
+
+        <EditText
+            android:hint="@string/phone"
+            android:id="@+id/et_phone"
+            android:maxLength="8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone" />
+        <requestFocus />
+
+    </android.support.design.widget.TextInputLayout>
+
+</LinearLayout>

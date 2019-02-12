@@ -1,0 +1,241 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="appName">WasteApp</string>
+    <string name="crediter">Créditer</string>
+    <string name="commander">Commander</string>
+    <string name="pay">Payer</string>
+    <string name="credit">Crédit</string>
+    <string name="particulier">Particulier</string>
+    <string name="password">Mot de passe</string>
+    <string name="c_password">Confirmer le mot de passe</string>
+    <string name="email">Email</string>
+    <string name="category">Catégorie</string>
+    <string name="frequency">Fréquence</string>
+    <string name="historique">Historique</string>
+    <string name="confirm">Confirmer</string>
+    <string name="signup"> S\'inscrire </string>
+    <string name="signin"> Se connecter </string>
+    <string name="already">Vous avez déjà un compte ? \t</string>
+    <string name="dont"> Vous n\'avez pas de compte ? \t</string>
+    <string name="logout">D/éconnexion</string>
+    <string name="residence">Quartier</string>
+    <string name="place">Adresse</string>
+    <string name="phone">Téléphone</string>
+    <string name="names">Nom et prénom</string>
+    <string name="descr">Image view</string>
+    <string name="brand">Waste App</string>
+    <string name="aboutus">À propos</string>
+    <string name="amount">Crédit à payer: </string>
+    <string name="left">\t[</string>
+    <string name="right">]</string>
+    <string name="credits">Crédits disponible</string>
+    <string name="share_credit">Partager mes crédits</string>
+    <string name="refresh">Actualiser</string>
+
+    <string-array name="client">
+        <item>Particulier</item>
+        <item>Bar</item>
+        <item>Epicerie</item>
+        <item>Restaurant</item>
+        <item>Hôtel</item>
+        <item tools:ignore="Typos">Mariage</item>
+        <item>Cérémonie</item>
+    </string-array>
+
+    <string-array name="frequency">
+        <item>One Shot</item>
+        <item>1* par semaine</item>
+        <item>2* par semaine</item>
+        <item>3* par semaine</item>
+        <item>4* par semaine</item>
+        <item>5* par semaine</item>
+    </string-array>
+
+
+    <string-array name="creneau">
+        <item>7h - 9h</item>
+        <item>10h - 12h</item>
+        <item>14h - 16h</item>
+        <item>17h - 18h</item>>
+    </string-array>
+
+    <string name="creneau">Créneau</string>
+    <string name="days">Jour(s) de ramassage</string>
+    <string name="days1">Jour(s) : </string>
+    <string name="todo">No ramassage : </string>
+
+    <string name="steponeone">1. Dépôt Mobile Money.</string>
+    <string name="stepone">Faire un dépôt Mobile Money pour la valeur du nombre de crédits souhaités</string>
+    <string name="airtelone">\t 07 97 91 95 \t (Airtel Money)</string>
+    <string name="mobi">\t 02 48 26 97 \t(Mobicash)</string>
+    <string name="creditq">Qu’est ce que c’est qu’un crédit ?</string>
+
+    <string name="steptwotwo">2. Confirmer Dépôt </string>
+    <string name="steptwo">Appelez notre service des opérations pour confirmer le dépôt Mobile money </string>
+    <string name="airteltwo">\t 07 97 91 95 \t (Airtel)</string>
+    <string name="service">Service des opérations WasteApp</string>
+    <string name="lib">\t 02 48 26 97 \t(Libertis)</string>
+
+    <string name="stepthreethree">3. Confirmer Dépôt Mobile Money</string>
+    <string name="stepthree">Votre compte WasteApp est crédité dans l’heure suivant votre confirmation de dépôt Mobile money. \n Vous recevrez une notification d’activation  de vos crédits </string>
+
+    <string name="stepfourfour">4. Bienvenue sur WasteApp</string>
+    <string name="stepfour">Vous pouvez utiliser vos crédits pour \n effectuer vos paiements dans WasteApp.</string>
+
+    <string name="client1">Catégorie : </string>
+    <string name="date">Date d\'émission : </string>
+    <string name="frequency1">Fréquence : </string>
+    <string name="place1">Adresse : </string>
+    <string name="email1">Email : </string>
+    <string name="residence1">Quartier : </string>
+    <string name="phone1">Téléphone : </string>
+    <string name="creneau1">Créneau : </string>
+    <string name="credit1">Crédit : </string>
+    <string name="id">No ordre : </string>
+    <string name="todo1">Prévu : </string>
+    <string name="done">Réalisé : </string>
+    <string name="status">Status : </string>
+    <string name="message">Message : </string>
+    <string name="address">Utiliser une autre adresse ?</string>
+
+    <string name="shareID">ID : </string>
+    <string name="sender">Expéditeur : </string>
+    <string name="receiver2">Destinateur : </string>
+    <string name="cred">Crédits : </string>
+    <string name="time">Date : </string>
+
+    <string name="com"> Passer vos commandes en fonction de vos crédits disponibles et de votre catégorie client. Vous devez également choisir la fréquence de collecte à votre domicile.</string>
+    <string name="cancel"> Annuler</string>
+    <string name="credit_link">A propos de l’achat de crédit.</string>
+    <string name="payTitle">Payer votre Commande.</string>
+    <string name="dispo">Crédits disponibles</string>
+    <string name="histTitle">Historique de vos commandes</string>
+    <string name="histDetails">L’historique retrace vos ordres de commande ainsi que le statut de chaque collecte à votre domicile.</string>
+    <string name="payDetails" tools:ignore="Typos">Lorsque votre commande est payée, le système affecte un numéro d’ordre à votre commande et une équipe en charge de réaliser la collecte à votre domicile.
+Votre compteur de crédits sera également débité du nombre de crédits correspondant à votre commande.</string>
+
+    <string name="receiver">Entre l\'email du destinataire</string>
+    <string name="receiverID">Identifiant du destinataire : </string>
+    <string name="receiverName">Nom du destinataire : </string>
+    <string name="shared">Nombre de crédits à partager</string>
+    <string name="share">PARTAGER</string>
+    <string name="counter">0</string>
+    <string name="version">Edition 1.1.1</string>
+    <string name="web">visit our website</string>
+    <string name="copy">© WasteApp 2018. Tous droits réservés</string>
+    <string name="ur_command">Votre commande</string>
+
+    <string name="link"><a href="http://www.wasteappsolutionsInc.com">Termes et conditions</a></string>
+
+    <string name="credTitle">Créditer votre compte</string>
+    <string name="credDetails">Veuillez suivre la procédure suivante pour créditer votre compte.</string>
+    <string name="defCredit">Qu’est ce qu’un crédit ?</string>
+
+    <string name="oneTitle">1. Faire un dépôt Mobile Money.</string>
+    <string name="oneDescr">Faire un dépôt Mobile Money via l’opérateur de votre choix:</string>
+    <string name="air">Airtel Money - </string>
+    <string name="airNo">07 97 91 95 </string>
+    <string name="mobiCash">OU  Mobicash - </string>
+    <string name="mobiNo">02 48 26 97</string>
+
+    <string name="twoTitle">2. Confirmer le dépôt Mobile Money.</string>
+    <string name="twoDescr">Entrer votre numéro de transaction Mobile Money envoyé via sms par votre opérateur et le montant déposé.</string>
+    <string name="transId">Numéro de transaction</string>
+    <string name="transCash">Montant</string>
+    <string name="send">Envoyer</string>
+
+    <string name="threeTitle">3. Mise à jour de votre compte.</string>
+    <string name="threeDescr">Dès réception de votre confirmation de dépôt Mobile Money, votre compte sera crédité.</string>
+
+    <string name="fourTitle">4. Utiliser vos crédits WasteApp.</string>
+    <string name="fourDescr">Dès que votre compte est crédité, vous pourrez utiliser vos crédits pour effectuer des paiements dans votre compte WasteApp.</string>
+
+    <string name="shareTitle">Partager mes crédits</string>
+    <string name="shareDesc">Faites profiter à vos proches les avantages des services WasteApp en partageant vos crédits.
+        Votre compte sera débité à hauteur du nombre de crédits partagés.</string>
+
+    <string name="shareDesc6">Partagez vos crédits et obtenez des crédits</string>
+    <string name="shareDesc2">Avant de partager vos crédits, assurez-vous que votre destinataire dispose d’un compte WasteApp.</string>
+    <string name="shareDesc3">Partager WasteApp</string>
+    <string name="shareDesc4">OU</string>
+    <string name="shareDesc5">Inscriver votre destinataire</string>
+    <string name="free">GRATUIT !</string>
+    <string name="forgot">Mot de passe oublié ?</string>
+    <string name="terms">Termes et conditions</string>
+    <string name="shareapp">Partager WasteApp</string>
+
+    <string name="defTitle">Qu\'est-ce qu’un crédit ?</string>
+    <string name="defDetails">Un crédit est une unité de valeur qui vous permet d’acheter les services WasteApp. C’est vous qui choisissez la manière dont vous utilisez vos crédits en fonction de vos besoins.</string>
+    <string name="defDetails2">Gérer vos déchets ménagers est notre mission, alors n’hésitez pas à bénéficier des réductions ci-dessous.</string>
+
+    <string name="c1">1 crédit</string>
+    <string name="c3">3 crédits</string>
+    <string name="c6">6 crédits</string>
+    <string name="c12">12 crédits</string>
+    <string name="c18">18 crédits</string>
+    <string name="c24">24 crédits</string>
+    <string name="c36">36 crédits</string>
+    <string name="c60">60 crédits</string>
+    <string name="c150">150 crédits</string>
+    <string name="c300">300 crédits</string>
+
+    <string name="a3">3 000 fcfa</string>
+    <string name="a6">6 000 fcfa</string>
+    <string name="a12">12 000 fcfa</string>
+    <string name="a18">18 000 fcfa</string>
+    <string name="a24">24 000 fcfa</string>
+    <string name="a36">36 000 fcfa</string>
+    <string name="a60">60 000 fcfa</string>
+    <string name="a150">180 000 fcfa</string>
+    <string name="a300">300 000 fcfa</string>
+
+    <string name="p1">1 000 fcfa</string>
+    <string name="p3">2 850 fcfa</string>
+    <string name="p6">5 400 fcfa</string>
+    <string name="p12">10 260 fcfa</string>
+    <string name="p18">14 400 fcfa</string>
+    <string name="p24">18 720 fcfa</string>
+    <string name="p36">27 180 fcfa</string>
+    <string name="p60">42 000 fcfa</string>
+    <string name="p150">91 500 fcfa</string>
+    <string name="p300">175 500 fcfa</string>
+
+    <string name="r1">1 000 fcfa/crédit</string>
+    <string name="r3">950 fcfa/crédit</string>
+    <string name="r6">900 fcfa/crédit</string>
+    <string name="r12">855 fcfa/crédit</string>
+    <string name="r18">800 fcfa/crédit</string>
+    <string name="r24">780 fcfa/crédit</string>
+    <string name="r36">755 fcfa/crédit</string>
+    <string name="r60">700 fcfa/crédit</string>
+    <string name="r150">610 fcfa/crédit</string>
+    <string name="r300">585 fcfa/crédit</string>
+
+    <string name="tarif">Nos Tarifs</string>
+    <string name="buy">Acheter des crédits</string>
+    <string name="loginTitle">Accéder à votre compte</string>
+    <string name="create">Créer un compte</string>
+
+    <string name="solde">Votre solde en devise : </string>
+    <string name="reset">Réinitialiser</string>
+    <string name="jourR">Jour(s) de ramassage</string>
+    <string name="jourRR">Choisissez le(s) jour(s) de ramassage.</string>
+    <string name="jour">Lun</string>
+
+    <string name="err_msg_email">Entrez une adresse email valide.</string>
+    <string name="err_msg_password">Entrez le mot de passe.</string>
+    <string name="err_msg_confirm">Confirmez le mot de passe.</string>
+    <string name="err_msg_names">Entrez votre nom et Prénom.</string>
+    <string name="err_msg_name">Champ obligatoire.</string>
+    <string name="err_msg_phone">Entrez un numéro de téléphone valide.</string>
+    <string name="err_msg_match">Le mot de passe ne correspond pas.</string>
+    <string name="err_msg_deposit">Vous devez déposer au minimum 1 000 Fcfa.</string>
+    <string name="err_msg_credit">Vous devez partager au minimum 6 crédits.</string>
+    <string name="err_msg_trans">Entrez un numéro de transaction.</string>
+    <string name="err_msg_residence">Entrez votre quartier.</string>
+    <string name="err_msg_place">Entrez votre adresse.</string>
+    <string name="err_msg_days">Veuillez nous indiquer le(s) jour(s) de ramassage préféré</string>
+
+    <string name="shareHistTitle">Historique de partage de crédits.</string>
+    <string name="shareHistBody">Suivez vos échanges de crédits avec vos proches. Plus vous partagez vos crédits, plus vous obtenez des crédits gratuits !</string>
+
+</resources>
